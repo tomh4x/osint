@@ -47,9 +47,6 @@ def print_rec( dictobj, JSON=False ):
 	print("----------------------------------------------------------\n")
 
 def print_set( ds ):
-	jsonout = False
-	if len(sys.argv) == 4  and sys.argv[3] == "j":
-		jsonout = True
 	for i in range(len(ds['response'])):
 		print_rec( ds['response'][i], jsonout )
 
@@ -73,6 +70,9 @@ if qtype not in qtype_verbs:
 	print_usage()
 	sys.exit(1)
 
+jsonout=False
+if len(sys.argv) == 4 and sys.argv[3] == "j":
+	jsonout=True
 
 if qval == "-": 
 	#list mode activatez!
