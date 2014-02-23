@@ -25,8 +25,7 @@ def print_rban( ent ):
 
 
 
-#fh = open( sys.argv[1], "r")
-fh = open( "/home/esp/rizonlogs/rban.master", "r")
+fh = open( sys.argv[1], "r")
 rbans = []
 for line in fh:
 	L = re.match( r".*(\[RBan\].*)", line )
