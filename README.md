@@ -1,4 +1,4 @@
 osint
 =====
 
-Various scripts for OSINT
+Various cheesy utility scripts for OSINT host/ip list stuff
